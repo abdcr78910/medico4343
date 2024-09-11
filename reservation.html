@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Reservation</title>
+    <link rel="stylesheet" href="style.css/styles.css">
+    <link rel="icon" href="pictures/medicologo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="pictures/medicologo.png" alt="Hospital Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservation.html">Consultation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+        <h1>Book a Consultation</h1>
+    </header>
+
+    <main>
+        <section class="reservation-form">
+            <h2>Reserve Your Spot</h2>
+            <form action="/action_page.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Choose a Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="mr1">Dr. mr1</option>
+                        <option value="mr2">Dr. mr2</option>
+                        <option value="mr3">Dr. mr3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Choose a Time:</label>
+                    <select id="time" name="time" required>
+                        <option value="" disabled selected>Select a time</option>
+                        <option value="9am">Monday - Friday: 9 AM - 9 PM</option>
+                        <option value="10am">Saturday: 10 AM - 6 PM</option>
+                        <option value="closed">Sunday: Closed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Book Consultation">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
